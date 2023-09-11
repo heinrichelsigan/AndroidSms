@@ -1,0 +1,64 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1">
+
+        <TableRow android:padding="5dip">
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_sms_example"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp" />
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/imageButtonSMS"
+                android:src="@drawable/abc" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/editTextPhoneNumber"
+                android:hint="@string/enter_phone_number"
+                android:text="@string/default_phone_number"
+                android:phoneNumber="true"
+                android:textColorHint="@color/abc_primary_text_material_dark" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/editTextMessage"
+                android:text="@string/default_sms_text"
+                android:textColorHint="@color/abc_primary_text_material_dark"
+                android:hint="@string/enter_sms" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_sms"
+                android:id="@+id/btnSendSMS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>
