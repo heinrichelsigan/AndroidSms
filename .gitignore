@@ -1,6 +1,9 @@
 # Gradle files
 .gradle/
-build/
+build/generated
+build/intermediates
+build/tmp
+
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -31,3 +34,4 @@ google-services.json
 
 # Android Profiling
 *.hprof
+/app/build/outputs/logs/manifest-merger-debug-report.txt
